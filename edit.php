@@ -104,7 +104,7 @@ if ($mform->is_cancelled()) {
     } else {
         $fields = array('status' => $data->status,
                         'name' => $data->name,
-                        'customint1' => $data->notifymanagers,
+                        'customint1' => 0 + @$data->notifymanagers,
                         'customint2' => $data->auto,
                         'customint3' => $data->autogroup,
                         'customtext1' => $data->notificationtext,
