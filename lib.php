@@ -214,7 +214,7 @@ class enrol_profilefield_plugin extends enrol_plugin {
                 $this->enrol_user($instance, $USER->id, $instance->roleid, $timestart, $timeend);
 
                 // Autocreate group if required.
-                $this->process_group($instance, $user);
+                $this->process_group($instance, $USER);
 
                 // In addition check also the password for autogrouping by the user.
                 if (!empty($data->enrolpassword)) {
